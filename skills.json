@@ -1,0 +1,114 @@
+{
+  "name": "Claude Skills Marketplace",
+  "version": "1.0.0",
+  "description": "A curated collection of Claude skills for automation, development, and productivity",
+  "author": "Gaurav Garg (@ggarg2510)",
+  "repository": "https://github.com/ggarg2510/claude-skills",
+  "categories": [
+    {
+      "id": "automation",
+      "name": "🤖 Automation & Workflows",
+      "description": "Skills for workflow automation and orchestration"
+    },
+    {
+      "id": "development",
+      "name": "🔧 Development Tools",
+      "description": "Skills for coding and development tasks"
+    },
+    {
+      "id": "planning",
+      "name": "🧠 Planning & Architecture",
+      "description": "Skills for planning and system design"
+    },
+    {
+      "id": "data",
+      "name": "📊 Data Processing",
+      "description": "Skills for data manipulation and analysis"
+    },
+    {
+      "id": "integration",
+      "name": "🌐 API & Integrations",
+      "description": "Skills for API development and third-party integrations"
+    }
+  ],
+  "skills": [
+    {
+      "id": "n8n-workflow-architect",
+      "name": "n8n Workflow Architect",
+      "version": "1.0.0",
+      "category": "planning",
+      "subcategory": "automation",
+      "description": "Pre-implementation discussion and planning skill for n8n workflows with critical thinking and iterative refinement",
+      "author": "Gaurav Garg",
+      "featured": true,
+      "trending": true,
+      "downloads": 0,
+      "rating": 5.0,
+      "reviews": 0,
+      "tags": ["n8n", "workflow", "planning", "automation", "critical-thinking"],
+      "dependencies": {
+        "mcp_servers": ["sequentialthinking", "context7", "n8n-mcp"],
+        "skills": ["n8n-workflow-patterns", "n8n-node-configuration", "n8n-expression-syntax", "n8n-validation-expert", "n8n-mcp-tools-expert", "n8n-code-javascript", "n8n-code-python"]
+      },
+      "installation": {
+        "method": "directory",
+        "path": "n8n-workflow-architect",
+        "files": ["SKILL.md", "metadata.json", "README.md"]
+      },
+      "compatibility": {
+        "claude_versions": ["3.0+"],
+        "platforms": ["cloud", "self-hosted", "desktop"]
+      },
+      "metrics": {
+        "performance": {
+          "retry_reduction": "80%",
+          "success_rate_improvement": "75%",
+          "average_planning_time": "10-15 minutes"
+        }
+      },
+      "badges": [
+        "MCP Required",
+        "Production Ready",
+        "Well Documented"
+      ],
+      "last_updated": "2024-01-01",
+      "license": "MIT"
+    }
+  ],
+  "stats": {
+    "total_skills": 1,
+    "total_downloads": 0,
+    "total_contributors": 1,
+    "last_updated": "2024-01-01"
+  },
+  "featured_skills": ["n8n-workflow-architect"],
+  "new_skills": ["n8n-workflow-architect"],
+  "trending_skills": ["n8n-workflow-architect"],
+  "coming_soon": [
+    {
+      "name": "AWS Infrastructure Planner",
+      "category": "planning",
+      "eta": "Q1 2024"
+    },
+    {
+      "name": "API Documentation Generator",
+      "category": "development",
+      "eta": "Q1 2024"
+    },
+    {
+      "name": "Code Review Assistant",
+      "category": "development",
+      "eta": "Q2 2024"
+    },
+    {
+      "name": "Database Schema Designer",
+      "category": "data",
+      "eta": "Q2 2024"
+    },
+    {
+      "name": "Docker Compose Builder",
+      "category": "development",
+      "eta": "Q2 2024"
+    }
+  ]
+}

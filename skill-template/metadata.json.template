@@ -1,0 +1,72 @@
+{
+  "name": "skill-name",
+  "version": "1.0.0",
+  "description": "Brief description of what this skill does",
+  "author": {
+    "name": "Your Name",
+    "github": "yourusername"
+  },
+  "category": "planning|development|automation|data|integration",
+  "tags": [
+    "tag1",
+    "tag2",
+    "tag3"
+  ],
+  "dependencies": {
+    "mcp_servers": [],
+    "skills": [],
+    "external": []
+  },
+  "activation": {
+    "patterns": [
+      "activation phrase 1",
+      "activation phrase 2",
+      "activation phrase 3"
+    ],
+    "priority": "normal|high|low",
+    "scope": "general|specific-tool"
+  },
+  "features": {
+    "feature1": true,
+    "feature2": false
+  },
+  "performance_metrics": {
+    "metric1": "value",
+    "metric2": "value"
+  },
+  "compatibility": {
+    "claude_versions": ["3.0+"],
+    "platforms": ["cloud", "self-hosted", "desktop"]
+  },
+  "license": "MIT",
+  "repository": "https://github.com/yourusername/repository",
+  "documentation": {
+    "readme": "README.md",
+    "examples": "examples.md",
+    "api": "api.md"
+  },
+  "changelog": {
+    "1.0.0": {
+      "date": "YYYY-MM-DD",
+      "changes": [
+        "Initial release"
+      ]
+    }
+  },
+  "settings": {
+    "configurable": true,
+    "default_config": {
+      "setting1": "default_value",
+      "setting2": "default_value"
+    }
+  },
+  "testing": {
+    "test_coverage": "0%",
+    "test_framework": "none",
+    "ci_enabled": false
+  },
+  "badges": [
+    "badge1",
+    "badge2"
+  ]
+}

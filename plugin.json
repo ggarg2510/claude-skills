@@ -1,0 +1,112 @@
+{
+  "name": "@ggarg2510/claude-skills-marketplace",
+  "version": "1.0.0",
+  "type": "skills-marketplace",
+  "display_name": "Claude Skills Marketplace",
+  "description": "A comprehensive marketplace of Claude skills for automation, development, and productivity",
+  "author": {
+    "name": "Gaurav Garg",
+    "github": "ggarg2510",
+    "email": "contact@example.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ggarg2510/claude-skills.git"
+  },
+  "homepage": "https://github.com/ggarg2510/claude-skills",
+  "documentation": "https://github.com/ggarg2510/claude-skills#readme",
+  "license": "MIT",
+  "keywords": [
+    "claude",
+    "skills",
+    "marketplace",
+    "automation",
+    "n8n",
+    "workflow",
+    "development",
+    "productivity"
+  ],
+  "plugin_config": {
+    "entry_point": "skills.json",
+    "skills_directory": "./",
+    "auto_update": true,
+    "update_check_interval": "weekly",
+    "installation_method": "selective",
+    "enable_ratings": true,
+    "enable_reviews": true,
+    "enable_analytics": false
+  },
+  "marketplace_features": {
+    "search": true,
+    "categories": true,
+    "featured": true,
+    "trending": true,
+    "new_arrivals": true,
+    "coming_soon": true,
+    "skill_preview": true,
+    "dependency_resolution": true,
+    "batch_install": true,
+    "skill_updates": true
+  },
+  "requirements": {
+    "claude_version": ">=3.0.0",
+    "mcp_servers": {
+      "optional": [
+        "sequentialthinking",
+        "context7",
+        "n8n-mcp"
+      ]
+    }
+  },
+  "api_endpoints": {
+    "skills_list": "/skills.json",
+    "skill_details": "/{skill_id}/metadata.json",
+    "skill_readme": "/{skill_id}/README.md",
+    "skill_content": "/{skill_id}/SKILL.md",
+    "categories": "/categories.json",
+    "updates": "/updates.json"
+  },
+  "installation": {
+    "commands": {
+      "install_all": "bash install.sh --all",
+      "install_skill": "bash install.sh --skill {skill_id}",
+      "update": "git pull origin main",
+      "uninstall": "bash uninstall.sh"
+    },
+    "paths": {
+      "skills_directory": "~/.claude/skills/",
+      "backup_directory": "~/.claude/skills-backup/"
+    }
+  },
+  "support": {
+    "issues": "https://github.com/ggarg2510/claude-skills/issues",
+    "discussions": "https://github.com/ggarg2510/claude-skills/discussions",
+    "documentation": "https://github.com/ggarg2510/claude-skills/wiki",
+    "contributing": "https://github.com/ggarg2510/claude-skills/blob/main/CONTRIBUTING.md"
+  },
+  "analytics": {
+    "track_installations": false,
+    "track_usage": false,
+    "anonymous_stats": false
+  },
+  "badges": [
+    {
+      "label": "Skills",
+      "message": "1",
+      "color": "blue"
+    },
+    {
+      "label": "License",
+      "message": "MIT",
+      "color": "green"
+    },
+    {
+      "label": "Version",
+      "message": "1.0.0",
+      "color": "orange"
+    }
+  ],
+  "changelog_url": "https://github.com/ggarg2510/claude-skills/blob/main/CHANGELOG.md",
+  "security_policy": "https://github.com/ggarg2510/claude-skills/security/policy",
+  "code_of_conduct": "https://github.com/ggarg2510/claude-skills/blob/main/CODE_OF_CONDUCT.md"
+}

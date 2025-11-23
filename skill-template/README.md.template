@@ -1,0 +1,137 @@
+# [Skill Name]
+
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Category](https://img.shields.io/badge/category-[category]-purple)
+![Status](https://img.shields.io/badge/status-active-success)
+
+## 🎯 Purpose
+[One-line description of the skill's primary purpose]
+
+## ✨ Key Features
+- **Feature 1**: [Description]
+- **Feature 2**: [Description]
+- **Feature 3**: [Description]
+- **Feature 4**: [Description]
+
+## 🚀 Quick Start
+
+### Installation
+```bash
+# From the marketplace
+bash install.sh --skill [skill-name]
+
+# Or manually
+cp -r [skill-name] ~/.claude/skills/
+```
+
+### Activation Phrases
+- "[Primary phrase]"
+- "[Alternative phrase]"
+- "[Context phrase]"
+
+### Basic Usage
+```
+User: "[Example input]"
+Claude: [Expected behavior/output]
+```
+
+## 📋 Requirements
+
+### MCP Servers
+- [ ] Server 1 (optional/required)
+- [ ] Server 2 (optional/required)
+
+### Related Skills
+- [ ] Skill 1 (optional/required)
+- [ ] Skill 2 (optional/required)
+
+## 🔧 Configuration
+
+### Default Settings
+```json
+{
+  "setting1": "value",
+  "setting2": "value"
+}
+```
+
+### Customization
+To customize this skill, modify the settings in `SKILL.md`:
+```
+[Configuration example]
+```
+
+## 📚 Examples
+
+### Example 1: [Use Case]
+```
+[Detailed example with input and output]
+```
+
+### Example 2: [Advanced Use Case]
+```
+[More complex example]
+```
+
+## 🤝 Integration
+
+### Works Well With
+- **[Skill Name]**: [How they work together]
+- **[Another Skill]**: [Integration benefits]
+
+### API/Handoff
+```
+Input: [Expected input format]
+Output: [Output format]
+```
+
+## 📊 Performance
+
+| Metric | Value |
+|--------|-------|
+| Speed | [Fast/Medium/Slow] |
+| Accuracy | [Percentage] |
+| Resource Usage | [Low/Medium/High] |
+
+## 🐛 Troubleshooting
+
+### Common Issues
+
+#### Issue 1: [Problem]
+**Solution**: [How to fix]
+
+#### Issue 2: [Problem]
+**Solution**: [How to fix]
+
+## 🚧 Limitations
+- [Limitation 1]
+- [Limitation 2]
+
+## 🔮 Roadmap
+- [ ] Feature 1 (v1.1)
+- [ ] Feature 2 (v1.2)
+- [ ] Enhancement 3 (v2.0)
+
+## 📝 Changelog
+
+### Version 1.0.0 (YYYY-MM-DD)
+- Initial release
+- [Feature list]
+
+## 🤝 Contributing
+Contributions are welcome! Please see the main [CONTRIBUTING.md](../CONTRIBUTING.md) guide.
+
+## 📄 License
+MIT - See [LICENSE](../LICENSE) file
+
+## 👤 Author
+**[Your Name]**
+- GitHub: [@yourusername](https://github.com/yourusername)
+
+## 🙏 Acknowledgments
+- [Credit 1]
+- [Credit 2]
+
+---
+Part of [Claude Skills Marketplace](https://github.com/ggarg2510/claude-skills)

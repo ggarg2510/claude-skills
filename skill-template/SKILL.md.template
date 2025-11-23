@@ -1,0 +1,115 @@
+# [Skill Name]
+
+## Overview
+[Brief description of what this skill does and its primary purpose]
+
+## Activation Patterns
+- "[Primary activation phrase]"
+- "[Alternative activation phrase]"
+- "[Another activation phrase]"
+- "[Context-specific phrase]"
+
+## Core Functionality
+
+### Main Purpose
+[Detailed explanation of the skill's main functionality]
+
+### Key Features
+- **Feature 1**: [Description]
+- **Feature 2**: [Description]
+- **Feature 3**: [Description]
+- **Feature 4**: [Description]
+
+## Execution Flow
+
+### Phase 1: [Initial Phase]
+[Description of what happens in this phase]
+```
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+```
+
+### Phase 2: [Processing Phase]
+[Description of processing logic]
+
+### Phase 3: [Output Phase]
+[Description of output generation]
+
+## Integration with Other Skills
+
+### Dependencies
+- **Required Skills**: [List any required skills]
+- **Optional Skills**: [List optional complementary skills]
+
+### Handoff Patterns
+```
+This Skill → [Next Skill]
+↓
+[Processing]
+↓
+[Output]
+```
+
+## Configuration
+
+### Required Settings
+```json
+{
+  "setting1": "value",
+  "setting2": "value"
+}
+```
+
+### Optional Settings
+- `option1`: [Description]
+- `option2`: [Description]
+
+## Best Practices
+
+### Do's
+- ✅ [Best practice 1]
+- ✅ [Best practice 2]
+- ✅ [Best practice 3]
+
+### Don'ts
+- ❌ [Thing to avoid 1]
+- ❌ [Thing to avoid 2]
+- ❌ [Thing to avoid 3]
+
+## Examples
+
+### Example 1: [Basic Usage]
+```
+User: "[User input example]"
+Assistant: [Expected response/behavior]
+```
+
+### Example 2: [Advanced Usage]
+```
+User: "[Complex user input]"
+Assistant: [Detailed response showing skill capabilities]
+```
+
+## Error Handling
+
+### Common Issues
+1. **[Issue 1]**: [Solution]
+2. **[Issue 2]**: [Solution]
+3. **[Issue 3]**: [Solution]
+
+### Fallback Behavior
+[What happens when the skill encounters an error]
+
+## Performance Considerations
+
+- **Speed**: [Expected performance]
+- **Resource Usage**: [Resource requirements]
+- **Limitations**: [Any limitations]
+
+## Changelog
+
+### Version X.X.X
+- [Change 1]
+- [Change 2]
+- [Change 3]
