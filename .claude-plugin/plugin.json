@@ -1,0 +1,23 @@
+{
+  "name": "claude-skills",
+  "version": "1.0.0",
+  "description": "Claude Skills Marketplace - A collection of specialized skills for automation, planning, and development",
+  "author": {
+    "name": "Gaurav Garg",
+    "url": "https://github.com/ggarg2510"
+  },
+  "license": "MIT",
+  "keywords": [
+    "claude",
+    "skills",
+    "marketplace",
+    "n8n",
+    "workflow",
+    "automation",
+    "planning",
+    "architecture",
+    "development"
+  ],
+  "repository": "https://github.com/ggarg2510/claude-skills",
+  "homepage": "https://github.com/ggarg2510/claude-skills"
+}
