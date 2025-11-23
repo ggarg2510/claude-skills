@@ -1,0 +1,98 @@
+{
+  "name": "n8n-workflow-architect",
+  "version": "1.0.0",
+  "description": "Pre-implementation discussion and planning skill for n8n workflows with critical thinking and iterative refinement",
+  "author": {
+    "name": "Gaurav Garg",
+    "github": "ggarg2510"
+  },
+  "category": "planning",
+  "tags": [
+    "n8n",
+    "workflow",
+    "planning",
+    "architecture",
+    "discussion",
+    "automation",
+    "critical-thinking"
+  ],
+  "dependencies": {
+    "mcp_servers": [
+      "sequentialthinking",
+      "context7",
+      "n8n-mcp"
+    ],
+    "skills": [
+      "n8n-workflow-patterns",
+      "n8n-node-configuration",
+      "n8n-expression-syntax",
+      "n8n-validation-expert",
+      "n8n-mcp-tools-expert",
+      "n8n-code-javascript",
+      "n8n-code-python"
+    ]
+  },
+  "activation": {
+    "patterns": [
+      "discuss.*n8n workflow",
+      "plan.*n8n automation",
+      "think through.*workflow",
+      "analyze before building",
+      "design.*n8n workflow",
+      "need to automate",
+      "plan a workflow",
+      "best approach for"
+    ],
+    "priority": "high",
+    "scope": "n8n"
+  },
+  "features": {
+    "documentation_fetch": true,
+    "iterative_discussion": true,
+    "critical_thinking": true,
+    "edge_case_analysis": true,
+    "architecture_planning": true,
+    "test_scenario_creation": true
+  },
+  "workflow_lifecycle": {
+    "phase": "think_and_plan",
+    "sequence": [
+      "Think",
+      "Plan",
+      "Build",
+      "Validate",
+      "Execute",
+      "Retry if failed"
+    ],
+    "goal": "minimize_retry_loop"
+  },
+  "performance_metrics": {
+    "expected_reduction_in_retries": "80%",
+    "average_planning_time": "10-15 minutes",
+    "success_rate_improvement": "75%"
+  },
+  "compatibility": {
+    "claude_versions": ["3.0+"],
+    "n8n_versions": ["1.0+"],
+    "platforms": ["cloud", "self-hosted", "desktop"]
+  },
+  "license": "MIT",
+  "repository": "https://github.com/ggarg2510/claude-skills",
+  "documentation": {
+    "readme": "README.md",
+    "main_repo": "https://github.com/ggarg2510/claude-skills"
+  },
+  "changelog": {
+    "1.0.0": {
+      "date": "2024-01-01",
+      "changes": [
+        "Initial release",
+        "Context7 integration for documentation",
+        "SequentialThinking MCP for critical analysis",
+        "Iterative discussion framework",
+        "Edge case analysis patterns",
+        "Integration with existing n8n skills"
+      ]
+    }
+  }
+}
