@@ -1,0 +1,62 @@
+{
+  "name": "claude-skills",
+  "version": "1.0.0",
+  "display_name": "Claude Skills Marketplace",
+  "description": "A comprehensive marketplace of Claude skills for automation, development, and productivity",
+  "author": {
+    "name": "Gaurav Garg",
+    "github": "ggarg2510"
+  },
+  "repository": "https://github.com/ggarg2510/claude-skills",
+  "homepage": "https://github.com/ggarg2510/claude-skills",
+  "license": "MIT",
+  "skills": [
+    {
+      "id": "n8n-workflow-architect",
+      "name": "n8n Workflow Architect",
+      "description": "Pre-implementation discussion and planning skill for n8n workflows",
+      "version": "1.0.0",
+      "path": "n8n-workflow-architect",
+      "main": "SKILL.md",
+      "metadata": "metadata.json",
+      "readme": "README.md",
+      "category": "planning",
+      "tags": ["n8n", "workflow", "planning", "automation"],
+      "featured": true
+    }
+  ],
+  "categories": [
+    {
+      "id": "planning",
+      "name": "Planning & Architecture",
+      "icon": "🧠"
+    },
+    {
+      "id": "automation",
+      "name": "Automation & Workflows",
+      "icon": "🤖"
+    },
+    {
+      "id": "development",
+      "name": "Development Tools",
+      "icon": "🔧"
+    },
+    {
+      "id": "data",
+      "name": "Data Processing",
+      "icon": "📊"
+    },
+    {
+      "id": "integration",
+      "name": "API & Integrations",
+      "icon": "🌐"
+    }
+  ],
+  "marketplace_config": {
+    "skills_directory": "./",
+    "templates_directory": "./skill-template",
+    "documentation_directory": "./docs",
+    "installation_script": "./install.sh",
+    "skills_index": "./skills.json"
+  }
+}

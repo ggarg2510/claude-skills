@@ -82,6 +82,8 @@ site/
 # Claude specific
 .claude/
 claude-artifacts/
+# But keep the marketplace configuration
+!.claude-plugin/
 
 # Custom
 TODO.md
