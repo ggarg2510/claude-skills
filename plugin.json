@@ -28,7 +28,7 @@
   ],
   "plugin_config": {
     "entry_point": "skills.json",
-    "skills_directory": "./",
+    "skills_directory": "./skills/",
     "auto_update": true,
     "update_check_interval": "weekly",
     "installation_method": "selective",
@@ -60,9 +60,9 @@
   },
   "api_endpoints": {
     "skills_list": "/skills.json",
-    "skill_details": "/{skill_id}/metadata.json",
-    "skill_readme": "/{skill_id}/README.md",
-    "skill_content": "/{skill_id}/SKILL.md",
+    "skill_details": "/skills/{skill_id}/metadata.json",
+    "skill_readme": "/skills/{skill_id}/README.md",
+    "skill_content": "/skills/{skill_id}/SKILL.md",
     "categories": "/categories.json",
     "updates": "/updates.json"
   },
