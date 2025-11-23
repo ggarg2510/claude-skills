@@ -106,7 +106,7 @@ install_skill() {
     print_info "Installing skill: $skill_name"
 
     # Check if skill exists
-    if [ ! -d "$SCRIPT_DIR/$skill_name" ]; then
+    if [ ! -d "$SCRIPT_DIR/skills/$skill_name" ]; then
         print_error "Skill '$skill_name' not found"
         return 1
     fi
@@ -118,11 +118,11 @@ install_skill() {
     fi
 
     # Copy skill to Claude skills directory
-    cp -r "$SCRIPT_DIR/$skill_name" "$SKILLS_DIR/"
+    cp -r "$SCRIPT_DIR/skills/$skill_name" "$SKILLS_DIR/"
 
     # Check for dependencies
-    if [ -f "$SCRIPT_DIR/$skill_name/metadata.json" ]; then
-        local deps=$(jq -r '.dependencies.mcp_servers[]?' "$SCRIPT_DIR/$skill_name/metadata.json" 2>/dev/null)
+    if [ -f "$SCRIPT_DIR/skills/$skill_name/metadata.json" ]; then
+        local deps=$(jq -r '.dependencies.mcp_servers[]?' "$SCRIPT_DIR/skills/$skill_name/metadata.json" 2>/dev/null)
         if [ -n "$deps" ]; then
             print_info "This skill requires the following MCP servers:"
             echo "$deps" | while IFS= read -r dep; do
@@ -130,7 +130,7 @@ install_skill() {
             done
         fi
 
-        local skill_deps=$(jq -r '.dependencies.skills[]?' "$SCRIPT_DIR/$skill_name/metadata.json" 2>/dev/null)
+        local skill_deps=$(jq -r '.dependencies.skills[]?' "$SCRIPT_DIR/skills/$skill_name/metadata.json" 2>/dev/null)
         if [ -n "$skill_deps" ]; then
             print_info "This skill depends on the following skills:"
             echo "$skill_deps" | while IFS= read -r dep; do
@@ -153,13 +153,13 @@ install_all() {
         skills=$(jq -r '.skills[].id' "$SCRIPT_DIR/skills.json")
 
         for skill in $skills; do
-            if [ -d "$SCRIPT_DIR/$skill" ]; then
+            if [ -d "$SCRIPT_DIR/skills/$skill" ]; then
                 install_skill "$skill"
             fi
         done
     else
         # Fallback: install all directories that look like skills
-        for dir in "$SCRIPT_DIR"/*/; do
+        for dir in "$SCRIPT_DIR/skills"/*/; do
             if [ -d "$dir" ] && [ -f "$dir/SKILL.md" ]; then
                 skill_name=$(basename "$dir")
                 if [[ "$skill_name" != "skill-template" ]] && [[ "$skill_name" != "docs" ]]; then
@@ -186,7 +186,7 @@ update_skills() {
     for skill_dir in "$SKILLS_DIR"/*/; do
         if [ -d "$skill_dir" ]; then
             skill_name=$(basename "$skill_dir")
-            if [ -d "$SCRIPT_DIR/$skill_name" ]; then
+            if [ -d "$SCRIPT_DIR/skills/$skill_name" ]; then
                 print_info "Updating $skill_name..."
                 install_skill "$skill_name"
             fi

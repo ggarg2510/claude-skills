@@ -52,7 +52,7 @@
       },
       "installation": {
         "method": "directory",
-        "path": "n8n-workflow-architect",
+        "path": "skills/n8n-workflow-architect",
         "files": ["SKILL.md", "metadata.json", "README.md"]
       },
       "compatibility": {
